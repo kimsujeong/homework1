@@ -1,0 +1,18 @@
+---
+title: "BayesHw1"
+author: "Sujung Kim"
+date: "2016년 9월 8일"
+output: html_document
+---
+
+
+R 내장 데이터셋 airquality에서 Wind data와 Ozone data를 linear regression 한 결과이다.
+
+$$Ozone=Wind+\epsilon $$
+
+```{r}
+attach(airquality)
+summary(lm(Ozone~Wind))
+```
+
+(2013-13434 김수정)
